@@ -69,7 +69,11 @@ export function StickyNavbar() {
     return (
         <div className="w-full">
             <Navbar
-                className="fixed top-0 left-0 right-0 z-50 h-max max-w-full rounded-none px-2 py-1 lg:px-8 lg:py-1 shadow-md bg-white/80 backdrop-blur-sm border-b border-gray-100">
+                className="fixed top-0 left-0 right-0 z-50 h-max max-w-full rounded-none px-2 py-1 lg:px-8 lg:py-1 shadow-md border-b border-gray-100"
+                style={{
+                    background: 'linear-gradient(to right, #0692FF)',
+                    backdropFilter: 'blur-sm'
+                }}>
                 <div className="flex items-center justify-between text-black">
                     <div className="flex items-center">
                         <IconButton
@@ -79,12 +83,12 @@ export function StickyNavbar() {
                             className="flex items-center justify-center">
                             {
                                 isDrawerOpen
-                                    ? (<XMarkIcon className="h-8 w-8 stroke-2"/>)
+                                    ? (<XMarkIcon className="h-8 w-8 stroke-2" />)
                                     : (<Bars3Icon className="h-8 w-8 stroke-2"/>)
                             }
                         </IconButton>
                         <img 
-                            src="src\assets\img\icon\LOGO MUED Design System.jpg" 
+                            src="src\assets\img\icon\LOGO MUED Design System.png    " 
                             alt="Logo" 
                             className="ml-12 h-10 cursor-pointer" 
                         />
@@ -116,16 +120,13 @@ export function StickyNavbar() {
                 </div>
             </Navbar>
 
-            <Drawer open={isDrawerOpen} onClose={closeDrawer} className="shadow-lg">
+            <Drawer open={isDrawerOpen} onClose={closeDrawer} className="z-[40]">
                 <Card
-                    color="transparent"
-                    shadow={false}
-                    className="h-[calc(100vh-2rem)] w-full p-4 shadow-xl">
+                    
+                    className="h-[calc(120vh-2rem)] w-full p-4 ">
                     <div className="mb-2 flex items-center gap-4 p-4">
                         
-                        <Typography variant="h5" color="blue-gray">
-                            Sidebar
-                        </Typography>
+                       
                     </div>
 
                     <List>
