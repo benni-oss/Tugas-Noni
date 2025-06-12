@@ -1,6 +1,6 @@
 .footer-container {
   width: 100%;
-  background: linear-gradient(to bottom, #87CEEB, #5F9EA0);
+  background: #FFFFFF;
   position: relative;
 }
 
@@ -8,7 +8,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 3rem;
+  padding: 1rem 3rem;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -31,7 +31,7 @@
   text-decoration: none;
   font-weight: 500;
   font-size: 0.95rem;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0rem;
   border-radius: 6px;
   transition: all 0.3s ease;
 }
@@ -43,7 +43,7 @@
 }
 
 .footer-accent {
-  height: 8px;
+  height: 0px;
   background: linear-gradient(to right, #2E8B57, #228B22, #32CD32);
   width: 100%;
 }

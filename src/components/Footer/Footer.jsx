@@ -3,7 +3,8 @@ import './Footer.css'
 
 const Footer = () => {
   return (
-    <footer className="footer-container">
+    
+    <footer className="footer-container mt-5">
       <div className="footer-content">
         <div className="footer-left">
           <p>&copy; 2025 MUED Design System</p>
