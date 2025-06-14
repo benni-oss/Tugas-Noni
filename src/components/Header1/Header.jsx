@@ -28,7 +28,7 @@ export function StickyNavbar() {
   const closeDrawer = () => setIsDrawerOpen(false);
 
   return (
-    <div className="w-full">
+    <div className="w-full ">
       <Navbar
         className="fixed top-0 left-0 right-0 z-50 h-max max-w-full rounded-none px-2 py-1 lg:px-8 lg:py-1 shadow-md border-b border-gray-100 "
         style={{
@@ -61,7 +61,7 @@ export function StickyNavbar() {
             <div>
               <Typography
                 href="#"
-                className="ml-1 cursor-pointer text-xl font-dm-serif text-white whitespace-nowrap"
+                className="ml-1 cursor-pointer  font-dm-serif text-white whitespace-nowrap"
               >
                 MUED Design System
               </Typography>
@@ -75,7 +75,7 @@ export function StickyNavbar() {
               </div>
               <input
                 type="search"
-                className="block w-full p-1 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500"
+                className="block w-full p-1 ps-10  text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500"
                 placeholder="Search the MUED Design System"
                 required
               />
@@ -102,7 +102,7 @@ export function StickyNavbar() {
               </ListItemSuffix>
             </ListItem>
             <Collapse open={openGuide}>
-              <List className="pl-6 text-sm m-1">
+              <List className="pl-6 m-1">
                 <Link to="/introduction"><ListItem  className="hover:text-blue-700 m-1"> Basic Introduction</ListItem></Link>
                 <Link to="/values"><ListItem className="hover:text-blue-700 m-1">Design Values</ListItem></Link>
                 <Link to="/innoinher"><ListItem className="hover:text-blue-700 m-1">Innovation and Inheritance</ListItem></Link>
@@ -124,7 +124,7 @@ export function StickyNavbar() {
               </ListItemSuffix>
             </ListItem>
             <Collapse open={openGlobal}>
-              <List className="pl-6 text-sm">
+              <List className="pl-6 ">
                 <Link to="/layout"><ListItem className="hover:text-blue-700 m-1">Layout</ListItem></Link>
                 <Link to="/color"><ListItem className="hover:text-blue-700 m-1">Color</ListItem></Link>
                <Link to="/text"> <ListItem className="hover:text-blue-700 m-1">Text</ListItem></Link>
@@ -147,16 +147,16 @@ export function StickyNavbar() {
               </ListItemSuffix>
             </ListItem>
             <Collapse open={openComponents}>
-              <List className="pl-6 text-sm">
+              <List className="pl-6 ">
                <Link to="/stepbar"> <ListItem className="hover:text-blue-700 m-1">Step Bar</ListItem></Link>
               </List>
             </Collapse>
 
             {/* Others */}
-          <Link to="/tools">  <ListItem className="m-2 hover:bg-blue-50 transition rounded-md">
+          <Link to="/tools">  <ListItem className="m-2 text-black hover:bg-blue-50 transition rounded-md">
               Tools
             </ListItem></Link>
-            <Link to="/contact"> <ListItem className="m-2 hover:bg-blue-50 transition rounded-md">
+            <Link to="/contact"> <ListItem className="m-2 text-black hover:bg-blue-50 transition rounded-md">
               Contact Us
             </ListItem></Link>
           </List>

@@ -166,7 +166,7 @@ Fira Sans, 'Droid Sans', 'Helvetica Neue', arial, sans-serif{" "}
           <img
             src="src\assets\img\resource\english_line.png"
             alt="MUED V.1"
-            className="w-150  scroll-ml-10"
+            className="w-125  scroll-ml-10"
           />
         </div>
       </div>

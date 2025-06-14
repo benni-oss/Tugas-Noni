@@ -27,7 +27,7 @@ function Layout() {
 
           <div className="mt-0">
             <a
-              className="justify-center items-center text-lg "
+              className="justify-center items-center text-lg  "
               style={{
                 color: "black",
               }}
@@ -47,7 +47,7 @@ function Layout() {
       {/* Section 3 */}
       <div className=" flex justify-center items-center  mt-5  ">
         <div className="ml-0 w-1/2">
-          <p className="mt-2 text-black max-w-200 text-l text-justify font-bold">
+          <p className="mt-2 text-blue-500  max-w-200 text-l text-justify font-bold">
           1. {" "}  Layout
           </p>
         </div>
@@ -63,7 +63,7 @@ function Layout() {
       {/* Section 1 */}
       <div className=" flex justify-center items-center  mt-5 object-cover -z-20">
         <div className="ml-0 w-1/2">
-          <p className="mt-0 text-black text-start text-l max-w-200 ">
+          <p className="mt-0 text-blue-500 text-start text-l font-bold max-w-200 ">
            Basic Layout{" "}
           </p>
         </div>
@@ -98,7 +98,7 @@ function Layout() {
      {/* Section 3 */}
       <div className=" flex justify-center items-center  mt-5  ">
         <div className="ml-0 w-1/2">
-          <p className="mt-2 text-black max-w-200 text-l text-justify font-bold">
+          <p className="mt-2 text-blue-500 max-w-200 text-l text-justify font-bold">
          {" "}  Multi-level Layout
           </p>
         </div>
@@ -135,7 +135,7 @@ function Layout() {
         {/* Section 3 */}
       <div className=" flex justify-center items-center  mt-5  ">
         <div className="ml-0 w-1/2">
-          <p className="mt-2 text-blue-500 underline max-w-200 text-l text-justify font-bold">
+          <p className="mt-2 text-blue-500  max-w-200 text-l text-justify font-bold">
          {" "}  Example: Home Page - T7 Interface & Home Page - G800 Interface
           </p>
         </div>
@@ -152,7 +152,7 @@ function Layout() {
             {/* Section 1 */}
       <div className=" flex justify-center items-center  mt-5 object-cover -z-20">
         <div className="ml-0 w-1/2">
-          <p className="mt-0 text-black text-start text-l max-w-200 ">
+          <p className="mt-0 text-blue-500 font-bold text-start text-l max-w-200 ">
            Single Modul Layout{" "}
           </p>
         </div>
@@ -178,7 +178,7 @@ function Layout() {
            {/* Section 1 */}
       <div className=" flex justify-center items-center  mt-5 object-cover -z-20">
         <div className="ml-0 w-1/2">
-          <p className="mt-0 text-black text-start text-l max-w-200 ">
+          <p className="mt-0 text-blue-500 text-start text-l font-bold max-w-200 ">
           Example: Home Page – E25 Interface          </p>
         </div>
       </div>
@@ -191,6 +191,14 @@ function Layout() {
             className="w-190  scroll-ml-10"
           />
         </div>
+      </div>
+      {/* Section 6 */}
+      <div className="flex justify-center items-center mt-20  ">
+        <img
+          src="src\assets\img\resource\End_Body.png"
+          alt="Develop Resources"
+          className="w-[1000px] h-auto  "
+        />
       </div>
     </div>
   )
