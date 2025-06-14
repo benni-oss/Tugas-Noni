@@ -65,11 +65,11 @@ function Values() {
       </div>
       {/* Section 4 */}
       <div className=" flex justify-center items-center  mt-5  ">
-        <div className="ml-0 w-1/2 ">
+        <div className="ml- w-1/2 ">
           <img
             src="src\assets\img\resource\CONSISTENCY.png"
             alt="MUED V.1"
-            className="w-100 h-18 scroll-ml-10"
+            className="w-150 h-18 scroll-ml-10"
           />
         </div>
       </div>
