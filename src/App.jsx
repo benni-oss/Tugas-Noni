@@ -17,6 +17,9 @@ import Layout from './components/layout/Layout'
 import Color from './components/Color/Color'
 import Text from './components/Text/Text'
 import Icon from './components/Icon/Icon'
+import Stepbar from './components/Stepbar/Stepbar'
+import Tools from './components/Tools/Tools'
+import Contact from './components/Contact/Contact'
 
 function App() {
 
@@ -78,6 +81,30 @@ function App() {
        <Route path="/icon" element={<>
         <Header/>
         <Icon/>
+        <Footer/>
+        </>
+        
+      } />
+
+      <Route path="/stepbar" element={<>
+        <Header/>
+        <Stepbar/>
+        <Footer/>
+        </>
+        
+      } />
+
+      <Route path="/tools" element={<>
+        <Header/>
+        <Tools/>
+        <Footer/>
+        </>
+        
+      } />
+
+            <Route path="/contact" element={<>
+        <Header/>
+        <Contact/>
         <Footer/>
         </>
         

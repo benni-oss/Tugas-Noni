@@ -103,9 +103,9 @@ export function StickyNavbar() {
             </ListItem>
             <Collapse open={openGuide}>
               <List className="pl-6 text-sm m-1">
-                <ListItem  className="hover:text-blue-700 m-1"> <Link to="/introduction">Basic Introduction</Link></ListItem>
-                <ListItem className="hover:text-blue-700 m-1"><Link to="/values">Design Values</Link></ListItem>
-                <ListItem className="hover:text-blue-700 m-1"><Link to="/innoinher">Innovation and Inheritance</Link></ListItem>
+                <Link to="/introduction"><ListItem  className="hover:text-blue-700 m-1"> Basic Introduction</ListItem></Link>
+                <Link to="/values"><ListItem className="hover:text-blue-700 m-1">Design Values</ListItem></Link>
+                <Link to="/innoinher"><ListItem className="hover:text-blue-700 m-1">Innovation and Inheritance</ListItem></Link>
               </List>
             </Collapse>
 
@@ -125,10 +125,10 @@ export function StickyNavbar() {
             </ListItem>
             <Collapse open={openGlobal}>
               <List className="pl-6 text-sm">
-                <ListItem className="hover:text-blue-700 m-1"><Link to="/layout">Layout</Link></ListItem>
-                <ListItem className="hover:text-blue-700 m-1"><Link to="/color">Color</Link></ListItem>
-                <ListItem className="hover:text-blue-700 m-1"><Link to="/text">Text</Link></ListItem>
-                <ListItem className="hover:text-blue-700 m-1">Icon</ListItem>
+                <Link to="/layout"><ListItem className="hover:text-blue-700 m-1">Layout</ListItem></Link>
+                <Link to="/color"><ListItem className="hover:text-blue-700 m-1">Color</ListItem></Link>
+               <Link to="/text"> <ListItem className="hover:text-blue-700 m-1">Text</ListItem></Link>
+                <Link to="/icon"><ListItem className="hover:text-blue-700 m-1">Icon</ListItem></Link>
               </List>
             </Collapse>
 
@@ -148,18 +148,17 @@ export function StickyNavbar() {
             </ListItem>
             <Collapse open={openComponents}>
               <List className="pl-6 text-sm">
-                <ListItem className="hover:text-blue-700 m-1">Step Bar</ListItem>
-                <ListItem className="hover:text-blue-700 m-1">Drop down Menu</ListItem>
+               <Link to="/stepbar"> <ListItem className="hover:text-blue-700 m-1">Step Bar</ListItem></Link>
               </List>
             </Collapse>
 
             {/* Others */}
-            <ListItem className="m-2 hover:bg-blue-50 transition rounded-md">
+          <Link to="/tools">  <ListItem className="m-2 hover:bg-blue-50 transition rounded-md">
               Tools
-            </ListItem>
-            <ListItem className="m-2 hover:bg-blue-50 transition rounded-md">
+            </ListItem></Link>
+            <Link to="/contact"> <ListItem className="m-2 hover:bg-blue-50 transition rounded-md">
               Contact Us
-            </ListItem>
+            </ListItem></Link>
           </List>
         </Card>
       </Drawer>

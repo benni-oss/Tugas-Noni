@@ -196,6 +196,14 @@ Fira Sans, 'Droid Sans', 'Helvetica Neue', arial, sans-serif{" "}
           />
         </div>
       </div>
+      {/* Section 6 */}
+      <div className="flex justify-center items-center mt-20  ">
+        <img
+          src="src\assets\img\resource\End_Body.png"
+          alt="Develop Resources"
+          className="w-[1000px] h-auto  "
+        />
+      </div>
     </div>
   )
 }
