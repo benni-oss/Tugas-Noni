@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Header from './components/Header1/header'
+import Header, { Header1 } from './components/Header1/Header1'
 import './App.css'
 import HomePage from './components/Home/Home_Page'
 import BodyPage from './components/Home/BodyPage'
@@ -29,28 +29,28 @@ function App() {
       <Routes>
         <Route path="/" element={
           <>
-            <Header/>
+            <Header1/>
             <HomePage  />
             <BodyPage/>
             <Footer/>
           </>
         } />
         <Route path="/introduction" element={<>
-        <Header/>
+        <Header1/>
         <Intro_page/>
         <Footer/>
         </>
         
       } />
        <Route path="/values" element={<>
-        <Header/>
+        <Header1/>
         <Values/>
         <Footer/>
         </>
         
       } />
             <Route path="/innoinher" element={<>
-        <Header/>
+        <Header1/>
         <Innoinher/>
         <Footer/>
         </>
@@ -58,28 +58,28 @@ function App() {
       } />
 
        <Route path="/layout" element={<>
-        <Header/>
+        <Header1/>
         <Layout/>
         <Footer/>
         </>
         
       } />
         <Route path="/color" element={<>
-        <Header/>
+        <Header1/>
         <Color/>
         <Footer/>
         </>
         
       } />
        <Route path="/text" element={<>
-        <Header/>
+        <Header1/>
         <Text/>
         <Footer/>
         </>
         
       } />
        <Route path="/icon" element={<>
-        <Header/>
+        <Header1/>
         <Icon/>
         <Footer/>
         </>
@@ -87,7 +87,7 @@ function App() {
       } />
 
       <Route path="/stepbar" element={<>
-        <Header/>
+        <Header1/>
         <Stepbar/>
         <Footer/>
         </>
@@ -95,7 +95,7 @@ function App() {
       } />
 
       <Route path="/tools" element={<>
-        <Header/>
+        <Header1/>
         <Tools/>
         <Footer/>
         </>
@@ -103,7 +103,7 @@ function App() {
       } />
 
             <Route path="/contact" element={<>
-        <Header/>
+        <Header1/>
         <Contact/>
         <Footer/>
         </>

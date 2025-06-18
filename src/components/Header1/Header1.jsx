@@ -18,7 +18,7 @@ import {
 } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
 
-export function StickyNavbar() {
+export function Header1() {
   const [isDrawerOpen, setIsDrawerOpen] = React.useState(false);
   const [openGuide, setOpenGuide] = React.useState(false);
   const [openGlobal, setOpenGlobal] = React.useState(false);
@@ -166,4 +166,4 @@ export function StickyNavbar() {
   );
 }
 
-export default StickyNavbar;
+export default Header1;
