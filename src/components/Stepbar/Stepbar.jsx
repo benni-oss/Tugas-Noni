@@ -1,96 +1,9 @@
 import React from 'react'
+import CodeBlock from './CodeBlock'
 
 function Stepbar() {
-  return (
-          <div className="min-h-screen w-full mt-20">
-      <div className="flex justify-center  items-center mt-20">
-        <img
-          src="src\assets\img\resource\hide_1.png" // ganti dengan path gambar latar belakang kamu
-          alt="Background"
-          className="absolute mt-20 mr-10 w-1/2 h-9  object-cover -z-10" // posisi paling belakang
-        />
-      </div>
-
-      <div
-        className="flex justify-center items-center   font-bold font-[lora] "
-        style={{}}
-      >
-        <p className="mt-0   text-black text-2xl text-start w-1/2  ">
-          <div className="">Components</div>
-          
-        </p>
-        <div className="flex justify-center  items-center mt-20">
-          <img
-            src="src\assets\img\resource\sequencer_decorate.png" // ganti dengan path gambar latar belakang kamu
-            alt="Background"
-            className="absolute mt-50 w-50 ml-50  -z-20" // posisi paling belakang
-          />
-        </div>
-      </div>
-      {/* Section 3 */}
-      <div className=" flex justify-center items-center  mt-5  ">
-        <div className="ml-0 w-1/2">
-          <p className="mt-2 text-black max-w-200 text-l text-justify font-bold">
-          1. {" "}  Step Bar
-          </p>
-        </div>
-      </div>
-      {/* Section 1 */}
-      <div className=" flex justify-center items-center  mt-5 object-cover -z-20">
-        <div className="ml-0 w-1/2">
-          <p className="mt-0 text-black text-start text-l max-w-200 ">
-            Displays the current progress of all steps in a task, guiding users through each phase and giving them a sense of anticipation.{" "}
-          </p>
-        </div>
-      </div>
-      {/* Section 1 */}
-      <div className=" flex justify-center items-center  mt-5 object-cover -z-20">
-        <div className="ml-0 w-1/2">
-          <p className="mt-0 text-black text-start text-l max-w-200 ">
-           Instruction{" "}
-          </p>
-        </div>
-      </div>
-         {/* Section 1 */}
-      <div className=" flex justify-center items-center  mt-5 object-cover -z-20">
-        <div className="ml-0 w-1/2">
-          <ul className="mt-0 text-black text-start text-l max-w-200 list-decimal pl-5 space-y-2">
-            <li>
-            The font size and spacing within the component are fixed, with a spacing of 20px between the text and the line. Specific spacing may be adjusted visually as needed.
-            </li>
-            <li>
-            Step types are available in small, medium, and large sizes. For touch screens, medium and large size recommended. For keyboard and mouse interactions, all sizes can be used.
-            </li>
-          </ul>
-        </div>
-      </div>
-        {/* Section 1 */}
-      <div className=" flex justify-center items-center  mt-0 object-cover -z-20">
-        <div className="ml-0 w-1/2">
-          <p className="mt-7 text-black text-start text-l max-w-200 ">
-           Basic Step Bar{" "}
-          </p>
-        </div>
-      </div>
-      {/* Section 4 */}
-      <div className=" flex justify-center items-center  mt-5  ">
-        <div className="">
-          <img
-            src="src\assets\img\IconRes\Stepbar.png"
-            alt="MUED V.1"
-            className="w-150 scroll-ml-10"
-          />
-        </div>
-      </div>
-
-
-      {/* Section 1 */}
-      <div className=" flex justify-center items-center  mt-5 object-cover -z-20">
-        <div className="ml-0 ">
-          <p className="mt-10 text-black text-start text-sm max-w-150 ">
-           <pre>
-            <code>
-              {`import React from 'react';
+  // Code snippets
+  const basicStepBarCode = `import React from 'react';
 import { Check } from 'lucide-react';
 import clsx from 'clsx';
 
@@ -146,7 +59,7 @@ export const BasicStepBar: React.FC<BasicStepBarProps> = ({ steps, size = 'md' }
                 {
                   'bg-blue-600 text-white': step.status === 'Process 1',
                   'bg-blue-100 text-blue-600': step.status === 'Process 2 ',
-                  'bg-gray-100 text-gray-400': step.status === 'Process 3,
+                  'bg-gray-100 text-gray-400': step.status === 'Process 3',
                 }
               )}
             >
@@ -173,50 +86,9 @@ export const BasicStepBar: React.FC<BasicStepBarProps> = ({ steps, size = 'md' }
       })}
     </div>
   );
-};
-`}
-            </code>
-           </pre>
-          </p>
-        </div>
-      </div>
- 
- 
-        {/* Section 3 */}
-      <div className=" flex justify-center items-center  mt-5  ">
-        <div className="ml-0 w-1/2">
-          <p className="mt-2 text-black  max-w-200 text-l text-justify font-bold">
-         Navigation Step Bar{" "}  
-          </p>
-        </div>
-      </div>
-      <div className=" flex justify-center items-center  mt-10  ">
-        <div className=" ">
-          <img
-            src="src\assets\img\IconRes\NavStep.png"
-            alt="MUED V.1"
-            className="w-150  scroll-ml-10"
-          />
-        </div>
-      </div>
-    
-      {/* Section 4 */}
-      <div className=" flex justify-center items-center  mt-10  ">
-        <div className=" ">
-          <img
-            src="src\assets\img\IconRes\nav_stepbar_2.png"
-            alt="MUED V.1"
-            className="w-150  scroll-ml-10"
-          />
-        </div>
-      </div>
-        {/* Section 1 */}
-      <div className=" flex justify-center items-center  mt-5 object-cover -z-20">
-        <div className="ml-0 ">
-          <p className="mt-10 text-black text-start text-sm max-w-150 ">
-           <pre>
-            <code>
-              {`import React from 'react';
+};`;
+
+  const navigationStepBarCode = `import React from 'react';
 import clsx from 'clsx';
 
 interface NavigationStep {
@@ -261,47 +133,16 @@ export const NavigationStepBar: React.FC<NavigationStepBarProps> = ({ steps, siz
             </button>
 
             {!isLast && (
-              <span className="mx-2 text-gray-300">&gt;</span>
+              <span className="mx-2 text-gray-300">></span>
             )}
           </div>
         );
       })}
     </div>
   );
-};
-`}
-            </code>
-           </pre>
-          </p>
-        </div>
-      </div>
-     
+};`;
 
-            {/* Section 3 */}
-      <div className=" flex justify-center items-center  mt-5  ">
-        <div className="ml-0 w-1/2">
-          <p className="mt-2 text-black  max-w-200 text-l text-justify font-bold">
-         Dot Step Bar{" "}  
-          </p>
-        </div>
-      </div>
-      <div className=" flex justify-center items-center  mt-10  ">
-        <div className=" ">
-          <img
-            src="src\assets\img\IconRes\dot_step_bar.png"
-            alt="MUED V.1"
-            className="w-150  scroll-ml-10"
-          />
-        </div>
-      </div>
-    
-        {/* Section 1 */}
-      <div className=" flex justify-center items-center  mt-5 object-cover -z-20">
-        <div className="ml-0 ">
-          <p className="mt-10 text-black text-start text-sm max-w-150 ">
-           <pre>
-            <code>
-              {`import React from 'react';
+  const dotStepBarCode = `import React from 'react';
 import clsx from 'clsx';
 
 interface DotStep {
@@ -373,39 +214,9 @@ export const DotStepBar: React.FC<DotStepBarProps> = ({ steps, size = 'md' }) =>
       })}
     </div>
   );
-};
+};`;
 
-`}
-            </code>
-           </pre>
-          </p>
-        </div>
-      </div>
-                 {/* Section 3 */}
-      <div className=" flex justify-center items-center  mt-5  ">
-        <div className="ml-0 w-1/2">
-          <p className="mt-2 text-black  max-w-200 text-l text-justify font-bold">
-         Description Step Bar{" "}  
-          </p>
-        </div>
-      </div>
-      <div className=" flex justify-center items-center  mt-10  ">
-        <div className=" ">
-          <img
-            src="src\assets\img\IconRes\des_step_bar.png"
-            alt="MUED V.1"
-            className="w-150  scroll-ml-10"
-          />
-        </div>
-      </div>
-    
-        {/* Section 1 */}
-      <div className=" flex justify-center items-center  mt-5 object-cover -z-20">
-        <div className="ml-0 ">
-          <p className="mt-10 text-black text-start text-sm max-w-150 ">
-           <pre>
-            <code>
-              {`import React from 'react';
+  const descriptionStepBarCode = `import React from 'react';
 import { Check } from 'lucide-react';
 import clsx from 'clsx';
 
@@ -482,18 +293,204 @@ export const DescriptionStepBar: React.FC<DescriptionStepBarProps> = ({ steps, s
       })}
     </div>
   );
-};
+};`;
 
+  return (
+    <div className="min-h-screen w-full mt-20">
+      <div className="flex justify-center  items-center mt-20">
+        <img
+          src="src\assets\img\resource\hide_1.png"
+          alt="Background"
+          className="absolute mt-20 mr-10 w-1/2 h-9  object-cover -z-10"
+        />
+      </div>
 
-`}
-            </code>
-           </pre>
+      <div
+        className="flex justify-center items-center   font-bold font-[lora] "
+        style={{}}
+      >
+        <p className="mt-0   text-black text-2xl text-start w-1/2  ">
+          <div className="">Components</div>
+        </p>
+        <div className="flex justify-center  items-center mt-20">
+          <img
+            src="src\assets\img\resource\sequencer_decorate.png"
+            alt="Background"
+            className="absolute mt-50 w-50 ml-50  -z-20"
+          />
+        </div>
+      </div>
+
+      {/* Section 3 */}
+      <div className=" flex justify-center items-center  mt-5  ">
+        <div className="ml-0 w-1/2">
+          <p className="mt-2 text-black max-w-200 text-l text-justify font-bold">
+          1. {" "}  Step Bar
           </p>
         </div>
       </div>
 
+      {/* Section 1 */}
+      <div className=" flex justify-center items-center  mt-5 object-cover -z-20">
+        <div className="ml-0 w-1/2">
+          <p className="mt-0 text-black text-start text-l max-w-200 ">
+            Displays the current progress of all steps in a task, guiding users through each phase and giving them a sense of anticipation.{" "}
+          </p>
+        </div>
+      </div>
 
-{/* Section 6 */}
+      {/* Section 1 */}
+      <div className=" flex justify-center items-center  mt-5 object-cover -z-20">
+        <div className="ml-0 w-1/2">
+          <p className="mt-0 text-black text-start text-l max-w-200 ">
+           Instruction{" "}
+          </p>
+        </div>
+      </div>
+
+      {/* Section 1 */}
+      <div className=" flex justify-center items-center  mt-5 object-cover -z-20">
+        <div className="ml-0 w-1/2">
+                   <ul className="mt-0 text-black text-start text-l max-w-200 list-decimal pl-5 space-y-2">
+            <li>
+            The font size and spacing within the component are fixed, with a spacing of 20px between the text and the line. Specific spacing may be adjusted visually as needed.
+            </li>
+            <li>
+            Step types are available in small, medium, and large sizes. For touch screens, medium and large size recommended. For keyboard and mouse interactions, all sizes can be used.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      {/* Section 1 */}
+      <div className=" flex justify-center items-center  mt-0 object-cover -z-20">
+        <div className="ml-0 w-1/2">
+          <p className="mt-7 text-black text-start text-l max-w-200 ">
+           Basic Step Bar{" "}
+          </p>
+        </div>
+      </div>
+
+      {/* Section 4 */}
+      <div className=" flex justify-center items-center  mt-5  ">
+        <div className="">
+          <img
+            src="src\assets\img\IconRes\Stepbar.png"
+            alt="MUED V.1"
+            className="w-150 scroll-ml-10"
+          />
+        </div>
+      </div>
+
+      {/* Basic Step Bar Code Block */}
+      <div className=" flex justify-center items-center  mt-5 object-cover -z-20">
+        <div className="ml-0 w-1/2">
+          <CodeBlock 
+            code={basicStepBarCode} 
+            title="BasicStepBar.tsx"
+          />
+        </div>
+      </div>
+
+      {/* Section 3 */}
+      <div className=" flex justify-center items-center  mt-5  ">
+        <div className="ml-0 w-1/2">
+          <p className="mt-2 text-black  max-w-200 text-l text-justify font-bold">
+         Navigation Step Bar{" "}  
+          </p>
+        </div>
+      </div>
+
+      <div className=" flex justify-center items-center  mt-10  ">
+        <div className=" ">
+          <img
+            src="src\assets\img\IconRes\NavStep.png"
+            alt="MUED V.1"
+            className="w-150  scroll-ml-10"
+          />
+        </div>
+      </div>
+    
+      {/* Section 4 */}
+      <div className=" flex justify-center items-center  mt-10  ">
+        <div className=" ">
+          <img
+            src="src\assets\img\IconRes\nav_stepbar_2.png"
+            alt="MUED V.1"
+            className="w-150  scroll-ml-10"
+          />
+        </div>
+      </div>
+
+      {/* Navigation Step Bar Code Block */}
+      <div className=" flex justify-center items-center  mt-5 object-cover -z-20">
+        <div className="ml-0 w-1/2">
+          <CodeBlock 
+            code={navigationStepBarCode} 
+            title="NavigationStepBar.tsx"
+          />
+        </div>
+      </div>
+
+      {/* Section 3 */}
+      <div className=" flex justify-center items-center  mt-5  ">
+        <div className="ml-0 w-1/2">
+          <p className="mt-2 text-black  max-w-200 text-l text-justify font-bold">
+         Dot Step Bar{" "}  
+          </p>
+        </div>
+      </div>
+
+      <div className=" flex justify-center items-center  mt-10  ">
+        <div className=" ">
+          <img
+            src="src\assets\img\IconRes\dot_step_bar.png"
+            alt="MUED V.1"
+            className="w-150  scroll-ml-10"
+          />
+        </div>
+      </div>
+
+      {/* Dot Step Bar Code Block */}
+      <div className=" flex justify-center items-center  mt-5 object-cover -z-20">
+        <div className="ml-0 w-1/2">
+          <CodeBlock 
+            code={dotStepBarCode} 
+            title="DotStepBar.tsx"
+          />
+        </div>
+      </div>
+
+      {/* Section 3 */}
+      <div className=" flex justify-center items-center  mt-5  ">
+        <div className="ml-0 w-1/2">
+          <p className="mt-2 text-black  max-w-200 text-l text-justify font-bold">
+         Description Step Bar{" "}  
+          </p>
+        </div>
+      </div>
+
+      <div className=" flex justify-center items-center  mt-10  ">
+        <div className=" ">
+          <img
+            src="src\assets\img\IconRes\des_step_bar.png"
+            alt="MUED V.1"
+            className="w-150  scroll-ml-10"
+          />
+        </div>
+      </div>
+
+      {/* Description Step Bar Code Block */}
+      <div className=" flex justify-center items-center  mt-5 object-cover -z-20">
+        <div className="ml-0 w-1/2">
+          <CodeBlock 
+            code={descriptionStepBarCode} 
+            title="DescriptionStepBar.tsx"
+          />
+        </div>
+      </div>
+
+      {/* Section 6 */}
       <div className="flex justify-center items-center mt-20  ">
         <img
           src="src\assets\img\resource\End_Body.png"
@@ -501,9 +498,9 @@ export const DescriptionStepBar: React.FC<DescriptionStepBarProps> = ({ steps, s
           className="w-[1000px] h-auto  "
         />
       </div>
-
     </div>
   )
 }
 
 export default Stepbar
+

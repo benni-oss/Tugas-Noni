@@ -1,7 +1,183 @@
-import React from "react";
+import React, { useState } from "react";
 
-function Color() {
+// Komponen ColorPalette yang bisa diklik dan copy
+const ColorPalette = ({ title, colors }) => {
+  const [copiedColor, setCopiedColor] = useState(null);
+
+  const copyToClipboard = async (colorValue) => {
+    try {
+      await navigator.clipboard.writeText(colorValue);
+      setCopiedColor(colorValue);
+      setTimeout(() => setCopiedColor(null), 2000);
+    } catch (err) {
+      console.error('Failed to copy: ', err);
+    }
+  };
+
   return (
+    <div className="m-4 p-4 bg-white rounded-lg shadow-md flex-1 max-w-sm"> {/* flex-1 untuk ukuran yang sama */}
+      <h3 className="text-lg font-semibold mb-3 text-center">{title}</h3>
+      <div className="grid grid-cols-5 gap-2">
+        {colors.map((color, index) => (
+          <div key={index} className="text-center">
+            <div
+              className="w-10 h-10 rounded cursor-pointer hover:scale-110 transition-transform duration-200 border border-gray-200 mx-auto"
+              style={{ backgroundColor: color.hex }}
+              onClick={() => copyToClipboard(color.hex)}
+              title={`Click to copy ${color.hex}`}
+            />
+            <p className="text-xs mt-1 font-medium">{color.name}</p>
+            <p className="text-xs text-gray-600">{color.hex}</p>
+            {copiedColor === color.hex && (
+              <p className="text-xs text-green-600 font-semibold">Copied!</p>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+function Color() 
+{
+  // Data color palettes
+  const velvetPalette = [
+    { name: "Velvet1", hex: "#4966F2" },
+    { name: "Velvet2", hex: "#F7F8FF  " },
+    { name: "Velvet3", hex: "#fbcfe8" },
+    { name: "Velvet4", hex: "#9CB5FF  " },
+    { name: "Velvet5", hex: "#7592FF" },
+    { name: "Velvet6", hex: "#4A67F4" },
+    { name: "Velvet7", hex: "#3448CF" },
+    { name: "Velvet8", hex: "#212EA7" },
+    { name: "Velvet9", hex: "#141C82" },
+    { name: "Velvet10", hex: "#0F1060" },
+    
+  ];
+
+  const slateBluePalette = [
+    { name: "SlateBlue1", hex: "#6754FF" },
+    { name: "SlateBlue2", hex: "#EEEBFF" },
+    { name: "SlateBlue3", hex: "#DCD1FF" },
+    { name: "SlateBlue4", hex: "#B8A7FF  " },
+    { name: "SlateBlue5", hex: "#9080FF" },
+    { name: "SlateBlue6", hex: "#6655FF" },
+    { name: "SlateBlue7", hex: "#4A40D9" },
+    { name: "SlateBlue8", hex: "#2F2AB3" },
+    { name: "SlateBlue9", hex: "#1B1B8C" },
+    { name: "SlateBlue10", hex: "#141568" }
+  ];
+
+  const Lakeblue = [
+    { name: "Lakeblue1", hex: "#0383D4" },
+    { name: "Lakeblue2", hex: "#B2E2FD" },
+    { name: "Lakeblue3", hex: "#7ED0FB" },
+    { name: "Lakeblue4", hex: "#49BDF8  " },
+    { name: "Lakeblue5", hex: "#1EB0F7" },
+    { name: "Lakeblue6", hex: "#00A2F5" },
+    { name: "Lakeblue7", hex: "#0083D4" },
+    { name: "Lakeblue8", hex: "#0174B2" },
+    { name: "Lakeblue9", hex: "#02548D" },
+    { name: "Lakeblue10", hex: "#063E75" }
+  ];
+
+  const Dodgeblue = [
+    { name: "Dodgeblue1", hex: "#0C3074" },
+    { name: "Dodgeblue2", hex: "#B2E2FD" },
+    { name: "Dodgeblue3", hex: "#8FC9FF" },
+    { name: "Dodgeblue4", hex: "#61B5FF    " },
+    { name: "Dodgeblue5", hex: "#38A4FF" },
+    { name: "Dodgeblue6", hex: "#0892FF" },
+    { name: "Dodgeblue7", hex: "#0892FF" },
+    { name: "Dodgeblue8", hex: "#015BBF" },
+    { name: "Dodgeblue9", hex: "#054294" },
+    { name: "Dodgeblue10", hex: "#0C3074" }
+  ];
+
+  //Ke2
+
+    // Data color palettes
+  const Red = [
+    { name: "Red1", hex: "#FF0404" },
+    { name: "Red2", hex: "#FFCCC7  " },
+    { name: "Red3", hex: "#FFA39E" },
+    { name: "Red4", hex: "#FF7875  " },
+    { name: "Red5", hex: "#FF4D4F" },
+    { name: "Red6", hex: "#F5222D" },
+    { name: "Red7", hex: "#CF1322" },
+    { name: "Red8", hex: "#A8071A" },
+    { name: "Red9", hex: "#820014" },
+    { name: "Red10", hex: "#5C0011" },
+    
+  ];
+
+  const Yellow = [
+    { name: "Yellow1", hex: "#FFF704" },
+    { name: "Yellow2", hex: "#FFFFB8" },
+    { name: "Yellow3", hex: "#FFFB8F" },
+    { name: "Yellow4", hex: "#FFF566    " },
+    { name: "Yellow5", hex: "#FFEC3D" },
+    { name: "Yellow6", hex: "#FADB14" },
+    { name: "Yellow7", hex: "#D4B106" },
+    { name: "Yellow8", hex: "#AD8B00" },
+    { name: "Yellow9", hex: "#876800" },
+    { name: "Yellow10", hex: "#614700" }
+  ];
+
+  const Green = [
+    { name: "Green1", hex: "#08D705" },
+    { name: "Green2", hex: "#D9F7BE" },
+    { name: "Green3", hex: "#7ED0FB" },
+    { name: "Green4", hex: "#95DE64    " },
+    { name: "Green5", hex: "#73D13D" },
+    { name: "Green6", hex: "#52C41A" },
+    { name: "Green7", hex: "#389E0D" },
+    { name: "Green8", hex: "#237804" },
+    { name: "Green9", hex: "#135200" },
+    { name: "Green10", hex: "#092B00" }
+  ];
+
+  const Blue = [
+    { name: "Blue1", hex: "#205BFF" },
+    { name: "Blue2", hex: "#BAE7FF" },
+    { name: "Blue3", hex: "#91D5FF" },
+    { name: "Blue4", hex: "#69C0FF" },
+    { name: "Blue5", hex: "#40A9FF" },
+    { name: "Blue6", hex: "#1890FF" },
+    { name: "Blue7", hex: "#096DD9" },
+    { name: "Blue8", hex: "#0050B3" },
+    { name: "Blue9", hex: "#003A8C" },
+    { name: "Blue10", hex: "#002766" }
+  ];
+  //Gray
+    const Grey = [
+    { name: "Grey1", hex: "#4D4D4D" },
+    { name: "Grey2", hex: "#FFFFFF" },
+    { name: "Grey3", hex: "#FAFAFA" },
+    { name: "Grey4", hex: "#DCDCDB" },
+    { name: "Grey5", hex: "#C2C2C2" },
+    { name: "Grey6", hex: "#949494" },
+    { name: "Grey7", hex: "#707070" },
+    { name: "Grey8", hex: "#525251" },
+    { name: "Grey9", hex: "#333333" },
+    { name: "Grey10", hex: "#090C1A" }
+  ];
+
+    const Tinted  = [
+    { name: "Colorgrey1", hex: "#4D4D4D" },
+    { name: "Colorgrey2", hex: "#FAFAFA" },
+    { name: "Colorgrey3", hex: "#F0F0F0" },
+    { name: "Colorgrey4", hex: "#DCDCDB" },
+    { name: "Colorgrey5", hex: "#C2C2C2" },
+    { name: "Colorgrey6", hex: "#707070" },
+    { name: "Colorgrey7", hex: "#525251" },
+    { name: "Colorgrey8", hex: "#333333" },
+    { name: "Colorgrey9", hex: "#242424" },
+    { name: "Colorgrey10", hex: "#090C1A" }
+  ];
+
+  return (
+    
     <div className="min-h-screen w-full mt-20">
       <div className="flex justify-center  items-center mt-20">
         <img
@@ -68,8 +244,8 @@ function Color() {
       </div>
       {/* Section 1 */}
       <div className=" flex justify-center items-center  mt-5 object-cover -z-20">
-        <div className="ml-0 w-1/2">
-          <p className="mt-0 text-black text-start text-l max-w-200 ">
+        <div className="ml-0 w-1/2 font-bold text-[#0692FF]">
+          <p className="mt-0  text-start text-l max-w-200 ">
             Color Definition{" "}
           </p>
         </div>
@@ -109,9 +285,9 @@ function Color() {
         </div>
       </div>
       {/* Section 1 */}
-      <div className=" flex justify-center items-center  mt-5 object-cover -z-20">
+      <div className=" flex justify-center items-center  mt-5 object-cover -z-20 font-bold text-[#0692FF]">
         <div className="ml-0 w-1/2">
-          <p className="mt-0 text-black text-start text-l max-w-200 ">
+          <p className="mt-0  text-start text-l max-w-200 ">
             Primary Colors{" "}
           </p>
         </div>
@@ -145,7 +321,7 @@ function Color() {
       {/* Section 1 */}
       <div className=" flex justify-center items-center  mt-5 object-cover -z-20">
         <div className="ml-0 w-1/2">
-          <p className="mt-0 text-black text-start text-l max-w-200 ">
+          <p className="mt-0 font-bold text-[#0692FF] text-start text-l max-w-200 ">
             Primary Color Palettes{" "}
           </p>
         </div>
@@ -160,45 +336,29 @@ function Color() {
           </p>
         </div>
       </div>
-      <div className=" flex  justify-center items-center  mt-5  ">
-        <div className="flex flex-row  mr-30">
-          <img
-            src="src\assets\img\resource\Velvet_Color Palette.png"
-            alt="MUED V.1"
-            className=" w-50  scroll-ml-10 m-4"
-          />
-          <img
-            src="src\assets\img\resource\SlateBlue_Colour Pallete.png"
-            alt="MUED V.1"
-            className=" w-50  scroll-ml-10 m-4"
-          />
+      <div className="flex justify-center items-start mt-5"> {/* items-start agar align dari atas */}
+        <div className="flex flex-row justify-center max-w-6xl"> {/* max-width untuk container */}
+          <ColorPalette title="Velvet Color Palette" colors={velvetPalette} />
+          <ColorPalette title="Slate Blue Color Palette" colors={slateBluePalette} />
         </div>
       </div>
-      <div className=" flex  justify-center items-center  mt-5  ">
-        <div className="flex flex-row  mr-30">
-          <img
-            src="src\assets\img\resource\LakeBlue_Color.png"
-            alt="MUED V.1"
-            className=" w-50  scroll-ml-10 m-4"
-          />
-          <img
-            src="src\assets\img\resource\dodgeblue_colour_pallete.png"
-            alt="MUED V.1"
-            className=" w-50  scroll-ml-10 m-4"
-          />
+      <div className="flex justify-center items-start mt-5">
+        <div className="flex flex-row justify-center max-w-6xl">
+          <ColorPalette title="Lakeblue Color Palette" colors={Lakeblue} />
+          <ColorPalette title="Dodgeblue Color Palette" colors={Dodgeblue} />
         </div>
       </div>
       {/* Section 1 */}
       <div className=" flex justify-center items-center  mt-5 object-cover -z-20">
-        <div className="ml-0 w-1/2">
-          <p className="mt-0 text-black text-start text-l max-w-200 ">
+        <div className="mr-167 m-1/2">
+          <p className="mt-0 font-bold text-[#0692FF] text-start text-l max-w-200 ">
             Functional Colors{" "}
           </p>
         </div>
       </div>
       {/* Section 1 */}
       <div className=" flex justify-center items-center  mt-5 object-cover -z-20">
-        <div className="ml-0 w-1/2">
+        <div className="ml-0 ">
           <p className="mt-0 text-black text-start text-l max-w-200 ">
             Functional colors are generally used to represent status scenarios
             such as notifications, errors, warnings, or success messages. In
@@ -215,7 +375,7 @@ function Color() {
       </div>
       {/* Section 1 */}
       <div className=" flex justify-center items-center  mt-5 object-cover -z-20">
-        <div className="ml-0 w-1/2">
+        <div className="ml-0 ">
           <p className="mt-0 text-black text-start text-l max-w-200 ">
             Because enterprise-level products cover a wide range of use cases,
             functional colors must be applicable to various interfaces and
@@ -224,37 +384,22 @@ function Color() {
           </p>
         </div>
       </div>
-      <div className=" flex  justify-center items-center  mt-5  ">
-        <div className="flex flex-row  mr-30">
-          <img
-            src="src\assets\img\resource\red_colour_pallete.png"
-            alt="MUED V.1"
-            className=" w-50  scroll-ml-10 m-4"
-          />
-          <img
-            src="src\assets\img\resource\yellow_colour_pallete.png"
-            alt="MUED V.1"
-            className=" w-50  scroll-ml-10 m-4"
-          />
+      <div className="flex justify-center items-start mt-5"> {/* items-start agar align dari atas */}
+        <div className="flex flex-row justify-center max-w-6xl"> {/* max-width untuk container */}
+          <ColorPalette title="Velvet Color Palette" colors={Red} />
+          <ColorPalette title="Slate Blue Color Palette" colors={Yellow} />
         </div>
       </div>
-      <div className=" flex  justify-center items-center  mt-5  ">
-        <div className="flex flex-row  mr-30">
-          <img
-            src="src\assets\img\resource\green_colour_pallete.png"
-            alt="MUED V.1"
-            className=" w-50  scroll-ml-10 m-4"
-          />
-          <img
-            src="src\assets\img\resource\blue_colour_pallete.png"
-            alt="MUED V.1"
-            className=" w-50  scroll-ml-10 m-4"
-          />
+      <div className="flex justify-center items-start mt-5">
+        <div className="flex flex-row justify-center max-w-6xl">
+          <ColorPalette title="Lakeblue Color Palette" colors={Green} />
+          <ColorPalette title="Dodgeblue Color Palette" colors={Blue} />
         </div>
       </div>
+
       <div className=" flex justify-center items-center  mt-5 object-cover -z-20">
         <div className="ml-0 w-1/2">
-          <p className="mt-0 text-black text-start text-l max-w-200 ">
+          <p className="mt-0 font-bold text-[#0692FF] text-start text-l max-w-200 ">
             Neutral Colors{" "}
           </p>
         </div>
@@ -286,7 +431,7 @@ function Color() {
       </div>
          <div className=" flex justify-center items-center  mt-5 object-cover -z-20">
         <div className="ml-0 w-1/2">
-          <p className="mt-0 text-black text-start text-l max-w-200 ">
+          <p className="mt-0 font-bold text-[#0692FF] text-start text-l max-w-200 ">
             Achromatic Greys{" "}
           </p>
         </div>
@@ -299,19 +444,14 @@ function Color() {
         </div>
       </div>
 
-      {/* Section 4 */}
-      <div className=" flex justify-center items-center  mt-5  ">
-        <div className="flex justify-center items-center w-1/2 ">
-          <img
-            src="src\assets\img\resource\grey_color.png"
-            alt="MUED V.1"
-            className="w-50  scroll-ml-10"
-          />
+      <div className="flex justify-center items-start mt-5">
+        <div className="flex flex-row justify-center max-w-6xl">
+          <ColorPalette title="Grey Color Palette" colors={Grey} />
         </div>
       </div>
               <div className=" flex justify-center items-center  mt-5 object-cover -z-20">
         <div className="ml-0 w-1/2">
-          <p className="mt-0 text-black text-start text-l max-w-200 ">
+          <p className="mt-0 text-blackfont-bold text-[#0692FF] text-start text-l max-w-200 ">
             Primary Color-Tinted Neutrals{" "}
           </p>
         </div>
@@ -325,16 +465,12 @@ Using Scheme 3 (velvet) as an example, we derive a set of neutrals by decreasing
         </div>
       </div>
 
-      {/* Section 4 */}
-      <div className=" flex justify-center items-center  mt-5  ">
-        <div className="flex justify-center items-center w-1/2 ">
-          <img
-            src="src\assets\img\resource\grey_color2.png"
-            alt="MUED V.1"
-            className="w-50  scroll-ml-10"
-          />
+      <div className="flex justify-center items-start mt-5">
+        <div className="flex flex-row justify-center max-w-6xl">
+          <ColorPalette title="Colorgrey Color Palette" colors={Tinted} />
         </div>
       </div>
+
       {/* Section 6 */}
       <div className="flex justify-center items-center mt-20  ">
         <img
