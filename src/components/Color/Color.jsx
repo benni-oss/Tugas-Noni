@@ -43,8 +43,8 @@ function Color()
   // Data color palettes
   const velvetPalette = [
     { name: "Velvet1", hex: "#4966F2" },
-    { name: "Velvet2", hex: "#F7F8FF  " },
-    { name: "Velvet3", hex: "#fbcfe8" },
+    { name: "Velvet2", hex: "#E7ECFF  " },
+    { name: "Velvet3", hex: "#C7D8FE" },
     { name: "Velvet4", hex: "#9CB5FF  " },
     { name: "Velvet5", hex: "#7592FF" },
     { name: "Velvet6", hex: "#4A67F4" },
@@ -82,13 +82,13 @@ function Color()
   ];
 
   const Dodgeblue = [
-    { name: "Dodgeblue1", hex: "#0C3074" },
-    { name: "Dodgeblue2", hex: "#B2E2FD" },
+    { name: "Dodgeblue1", hex: "#4966F2" },
+    { name: "Dodgeblue2", hex: "#CFE8FF" },
     { name: "Dodgeblue3", hex: "#8FC9FF" },
     { name: "Dodgeblue4", hex: "#61B5FF    " },
     { name: "Dodgeblue5", hex: "#38A4FF" },
     { name: "Dodgeblue6", hex: "#0892FF" },
-    { name: "Dodgeblue7", hex: "#0892FF" },
+    { name: "Dodgeblue7", hex: "#0B73D7" },
     { name: "Dodgeblue8", hex: "#015BBF" },
     { name: "Dodgeblue9", hex: "#054294" },
     { name: "Dodgeblue10", hex: "#0C3074" }
@@ -127,7 +127,7 @@ function Color()
   const Green = [
     { name: "Green1", hex: "#08D705" },
     { name: "Green2", hex: "#D9F7BE" },
-    { name: "Green3", hex: "#7ED0FB" },
+    { name: "Green3", hex: "#B7EB8F" },
     { name: "Green4", hex: "#95DE64    " },
     { name: "Green5", hex: "#73D13D" },
     { name: "Green6", hex: "#52C41A" },
