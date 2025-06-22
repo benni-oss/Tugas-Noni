@@ -48,11 +48,13 @@ function Tools() {
       {/* Section 4 */}
       <div className=" flex justify-center items-center  mt-10  ">
         <div className="ml-5 w-1/2 flex gap-5 ">
-          <img
-            src="\assets\img\IconRes\figma_ico.png"
-            alt="MUED V.1"
-            className="w-90 h-65 scroll-ml-10"
-          />
+          <a href="https://www.figma.com/" target="_blank" rel="noopener noreferrer">
+  <img
+    src="/assets/img/IconRes/figma_ico.png"
+    alt="MUED V.1"
+    className="w-90 h-65 scroll-ml-10"
+  />
+</a>
           <img
             src="\assets\img\IconRes\sha_figma.png"
             alt="MUED V.1"
@@ -67,11 +69,13 @@ function Tools() {
       {/* Section 4 */}
       <div className=" flex justify-center items-center  mt-10 ">
         <div className=" ml-5 w-1/2 flex gap-20 ">
-          <img
+          <a href="https://www.sketch.com/" target="_blank" rel="noopener noreferrer">
+   <img
             src="\assets\img\IconRes\sketch_ico.png"
             alt="MUED V.1"
             className="w-90 h-65 scroll-ml-10"
           />
+</a>
            <img
             src="\assets\img\IconRes\sha_sketch.png"
             alt="MUED V.1"
@@ -83,11 +87,13 @@ function Tools() {
        {/* Section 4 */}
       <div className=" flex justify-center items-center  mt-10  ">
         <div className="ml-5 w-1/2 flex gap-20 ">
-          <img
+          <a href="https://lanhuapp.com/" target="_blank" rel="noopener noreferrer">
+   <img
             src="\assets\img\IconRes\lanlu_ico.png"
             alt="MUED V.1"
             className="w-90 h-65 scroll-ml-10"
           />
+</a>
           <img
             src="\assets\img\IconRes\sha_lanlu.png"
             alt="MUED V.1"
