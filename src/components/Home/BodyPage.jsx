@@ -13,7 +13,7 @@ const BodyPage = () => {
           These are some of the previously created Design System
           <br></br>{" "}
           <a
-            href="https://www.example.com"
+            href="https://www.mgi-tech.com/"
             className=""
             style={{
               color: "black",
