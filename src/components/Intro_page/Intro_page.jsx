@@ -5,7 +5,7 @@ const BodyPage = () => {
     <div className="min-h-screen w-full mt-20">
         <div className="flex justify-center  items-center mt-20">
              <img
-          src="src\assets\img\resource\hide_1.png" // ganti dengan path gambar latar belakang kamu
+          src="\assets\img\resource\hide_1.png" // ganti dengan path gambar latar belakang kamu
           alt="Background"
           className="absolute mt-10  w-200 h-9  object-cover -z-10" // posisi paling belakang
         />
@@ -19,7 +19,7 @@ const BodyPage = () => {
           <div className="">MUED Design Guide</div>
           <div className="flex justify-center  items-center ">
              <img
-          src="src\assets\img\resource\hide_2.png" // ganti dengan path gambar latar belakang kamu
+          src="\assets\img\resource\hide_2.png" // ganti dengan path gambar latar belakang kamu>>
           alt="Background"
           className="absolute mt-10  w-200 h-6   object-cover -z-10" // posisi paling belakang
         />
@@ -38,7 +38,7 @@ const BodyPage = () => {
         </p>
          <div className="flex justify-center  items-center mt-20">
              <img
-          src="src\assets\img\resource\sequencer_decorate.png" // ganti dengan path gambar latar belakang kamu
+          src="\assets\img\resource\sequencer_decorate.png" // ganti dengan path gambar latar belakang kamu
           alt="Background"
           className="absolute mt-50 w-50 ml-50  -z-20" // posisi paling belakang
         />
@@ -81,7 +81,7 @@ const BodyPage = () => {
       <div className=" flex justify-center items-center  mt-5  ">
         <div className="ml-0 w-1/2">
           <img
-          src="src\assets\img\resource\Printer_shadow.png"
+          src="\assets\img\resource\Printer_shadow.png"
           alt="MUED V.1"
           className="w-1/4 scroll-ml-10"
         />
@@ -115,7 +115,7 @@ const BodyPage = () => {
       <div className=" flex justify-center items-center  mt-5  ">
         <div className="ml-0 w-1/2">
           <img
-          src="src\assets\img\resource\MUID_LOGO_2.png"
+          src="\assets\img\resource\MUID_LOGO_2.png"
           alt="MUED V.1"
           className="w-1/4 scroll-ml-10"
         />
@@ -162,7 +162,7 @@ const BodyPage = () => {
       {/* Section 6 */}
       <div className="flex justify-center items-center mt-20  ">
         <img
-          src="src\assets\img\resource\End_Body.png"
+          src="\assets\img\resource\End_Body.png"
           alt="Develop Resources"
           className="w-[1000px] h-auto  "
         />
