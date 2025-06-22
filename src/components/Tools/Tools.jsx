@@ -5,7 +5,7 @@ function Tools() {
            <div className="min-h-screen w-full mt-20">
       <div className="flex justify-center  items-center mt-20">
         <img
-          src="src\assets\img\resource\hide_1.png" // ganti dengan path gambar latar belakang kamu
+          src="\assets\img\resource\hide_1.png" // ganti dengan path gambar latar belakang kamu
           alt="Background"
           className="absolute mt-10 mr-10 w-1/2 h-9  object-cover -z-10" // posisi paling belakang
         />
@@ -19,7 +19,7 @@ function Tools() {
           <div className="">Tools</div>
           <div className="flex justify-center  items-center  ">
             <img
-              src="src\assets\img\resource\hide_2.png" // ganti dengan path gambar latar belakang kamu
+              src="\assets\img\resource\hide_2.png" // ganti dengan path gambar latar belakang kamu
               alt="Background"
               className="absolute mt-10  w-1/2 h-6 mr-10   object-cover -z-10" // posisi paling belakang
             />
@@ -38,7 +38,7 @@ function Tools() {
         </p>
         <div className="flex justify-center  items-center mt-20">
           <img
-            src="src\assets\img\IconRes\hammer_ico.png" // ganti dengan path gambar latar belakang kamu
+            src="\assets\img\IconRes\hammer_ico.png" // ganti dengan path gambar latar belakang kamu
             alt="Background"
             className="absolute mt-50 w-50 ml-50  -z-20" // posisi paling belakang
           />
@@ -49,12 +49,12 @@ function Tools() {
       <div className=" flex justify-center items-center  mt-10  ">
         <div className="ml-5 w-1/2 flex gap-5 ">
           <img
-            src="src\assets\img\IconRes\figma_ico.png"
+            src="\assets\img\IconRes\figma_ico.png"
             alt="MUED V.1"
             className="w-90 h-65 scroll-ml-10"
           />
           <img
-            src="src\assets\img\IconRes\sha_figma.png"
+            src="\assets\img\IconRes\sha_figma.png"
             alt="MUED V.1"
             className="w-100  scroll-ml-10"
           />
@@ -68,12 +68,12 @@ function Tools() {
       <div className=" flex justify-center items-center  mt-10 ">
         <div className=" ml-5 w-1/2 flex gap-20 ">
           <img
-            src="src\assets\img\IconRes\sketch_ico.png"
+            src="\assets\img\IconRes\sketch_ico.png"
             alt="MUED V.1"
             className="w-90 h-65 scroll-ml-10"
           />
            <img
-            src="src\assets\img\IconRes\sha_sketch.png"
+            src="\assets\img\IconRes\sha_sketch.png"
             alt="MUED V.1"
             className="w-100  scroll-ml-10"
           />
@@ -84,12 +84,12 @@ function Tools() {
       <div className=" flex justify-center items-center  mt-10  ">
         <div className="ml-5 w-1/2 flex gap-20 ">
           <img
-            src="src\assets\img\IconRes\lanlu_ico.png"
+            src="\assets\img\IconRes\lanlu_ico.png"
             alt="MUED V.1"
             className="w-90 h-65 scroll-ml-10"
           />
           <img
-            src="src\assets\img\IconRes\sha_lanlu.png"
+            src="\assets\img\IconRes\sha_lanlu.png"
             alt="MUED V.1"
             className="w-100  scroll-ml-10"
           />
@@ -100,7 +100,7 @@ function Tools() {
 {/* Section 6 */}
       <div className="flex justify-center items-center mt-20  ">
         <img
-          src="src\assets\img\resource\End_Body.png"
+          src="\assets\img\resource\End_Body.png"
           alt="Develop Resources"
           className="w-[1000px] h-auto  "
         />

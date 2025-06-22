@@ -5,7 +5,7 @@ function Contact() {
        <div className="min-h-screen w-full mt-20">
       <div className="flex justify-center  items-center mt-20">
         <img
-          src="src\assets\img\resource\hide_1.png" // ganti dengan path gambar latar belakang kamu
+          src="\assets\img\resource\hide_1.png" // ganti dengan path gambar latar belakang kamu
           alt="Background"
           className="absolute mt-10  w-200 h-9  object-cover -z-10" // posisi paling belakang
         />
@@ -19,7 +19,7 @@ function Contact() {
           <div className="">Contact Us</div>
           <div className="flex justify-center  items-center ">
             <img
-              src="src\assets\img\resource\hide_2.png" // ganti dengan path gambar latar belakang kamu
+              src="\assets\img\resource\hide_2.png" // ganti dengan path gambar latar belakang kamu
               alt="Background"
               className="absolute mt-10  w-200 h-6   object-cover -z-10" // posisi paling belakang
             />
@@ -38,7 +38,7 @@ function Contact() {
         </p>
         <div className="flex justify-center  items-center mt-20">
           <img
-            src="src\assets\img\IconRes\msg.png" // ganti dengan path gambar latar belakang kamu
+            src="\assets\img\IconRes\msg.png" // ganti dengan path gambar latar belakang kamu
             alt="Background"
             className="absolute mt-50 w-50 ml-50  -z-20" // posisi paling belakang
           />
@@ -186,7 +186,7 @@ function Contact() {
     {/* Section 6 */}
       <div className="flex justify-center items-center mt-20  ">
         <img
-          src="src\assets\img\resource\End_Body.png"
+          src="\assets\img\resource\End_Body.png"
           alt="Develop Resources"
           className="w-[1000px] h-auto  "
         />

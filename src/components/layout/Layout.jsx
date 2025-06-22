@@ -5,7 +5,7 @@ function Layout() {
         <div className="min-h-screen w-full mt-20">
       <div className="flex justify-center  items-center mt-20">
         <img
-          src="src\assets\img\resource\hide_1.png" // ganti dengan path gambar latar belakang kamu
+          src="\assets\img\resource\hide_1.png" // ganti dengan path gambar latar belakang kamu
           alt="Background"
           className="absolute mt-10 mr-10 w-1/2 h-9  object-cover -z-10" // posisi paling belakang
         />
@@ -19,7 +19,7 @@ function Layout() {
           <div className="">MUED Design Guide</div>
           <div className="flex justify-center  items-center  ">
             <img
-              src="src\assets\img\resource\hide_2.png" // ganti dengan path gambar latar belakang kamu
+              src="\assets\img\resource\hide_2.png" // ganti dengan path gambar latar belakang kamu
               alt="Background"
               className="absolute mt-10  w-1/2 h-6 mr-10   object-cover -z-10" // posisi paling belakang
             />
@@ -38,7 +38,7 @@ function Layout() {
         </p>
         <div className="flex justify-center  items-center mt-20">
           <img
-            src="src\assets\img\resource\sequencer_decorate.png" // ganti dengan path gambar latar belakang kamu
+            src="\assets\img\resource\sequencer_decorate.png" // ganti dengan path gambar latar belakang kamu
             alt="Background"
             className="absolute mt-50 w-50 ml-50  -z-20" // posisi paling belakang
           />
@@ -88,7 +88,7 @@ function Layout() {
       <div className=" flex justify-center items-center  mt-5  ">
         <div className="ml-5 w-1/2 ">
           <img
-            src="src\assets\img\resource\basic_layout.png"
+            src="\assets\img\resource\basic_layout.png"
             alt="MUED V.1"
             className="w-190  scroll-ml-10"
           />
@@ -116,7 +116,7 @@ function Layout() {
       <div className=" flex justify-center items-center  mt-5  ">
         <div className="ml-5 w-1/2 ">
           <img
-            src="src\assets\img\resource\multi-level_layout2.png"
+            src="\assets\img\resource\multi-level_layout2.png"
             alt="MUED V.1"
             className="w-190  scroll-ml-10"
           />
@@ -126,7 +126,7 @@ function Layout() {
       <div className=" flex justify-center items-center  mt-5  ">
         <div className="ml-5 w-1/2 ">
           <img
-            src="src\assets\img\resource\layout.png"
+            src="\assets\img\resource\layout.png"
             alt="MUED V.1"
             className="w-190  scroll-ml-10"
           />
@@ -143,7 +143,7 @@ function Layout() {
       <div className=" flex justify-center items-center  mt-5  ">
         <div className="ml-5 w-1/2 ">
           <img
-            src="src\assets\img\resource\Example_home.png"
+            src="\assets\img\resource\Example_home.png"
             alt="MUED V.1"
             className="w-190  scroll-ml-10"
           />
@@ -169,7 +169,7 @@ function Layout() {
       <div className=" flex justify-center items-center  mt-5  ">
         <div className="ml-5 w-1/2 ">
           <img
-            src="src\assets\img\resource\single_modul_layout.png"
+            src="\assets\img\resource\single_modul_layout.png"
             alt="MUED V.1"
             className="w-190  scroll-ml-10"
           />
@@ -186,7 +186,7 @@ function Layout() {
       <div className=" flex justify-center items-center  mt-5  ">
         <div className="ml-5 w-1/2 ">
           <img
-            src="src\assets\img\resource\Example_interface.png"
+            src="\assets\img\resource\Example_interface.png"
             alt="MUED V.1"
             className="w-190  scroll-ml-10"
           />
@@ -195,7 +195,7 @@ function Layout() {
       {/* Section 6 */}
       <div className="flex justify-center items-center mt-20  ">
         <img
-          src="src\assets\img\resource\End_Body.png"
+          src="\assets\img\resource\End_Body.png"
           alt="Develop Resources"
           className="w-[1000px] h-auto  "
         />

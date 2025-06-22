@@ -26,13 +26,13 @@ const BodyPage = () => {
       {/* Section 1 */}
       <div className="bg-white flex justify-center items-center p-10 mt-5 ">
         <img
-          src="src\assets\img\resource\MUED_V1.png"
+          src="\assets\img\resource\MUED_V1.png"
           alt="MUED V.1"
           className="w-1/4 scroll-ml-10 drop-shadow-lg"
         />
         <div className="ml-8 w-1/3">
           <img
-            src="src\assets\img\resource\MUED_V.1_Font.png"
+            src="\assets\img\resource\MUED_V.1_Font.png"
             alt="MUED V.3"
             className="w-1/4 scroll-ml-10 drop-shadow-lg"
           />
@@ -52,7 +52,7 @@ const BodyPage = () => {
       <div className=" text-black flex  items-center justify-center p-10">
         <div className="mr-8 text-left ml-8 w-1/3">
           <img
-            src="src\assets\img\resource\MUED_V.2_Font.png"
+            src="\assets\img\resource\MUED_V.2_Font.png"
             alt="MUED V.3"
             className="w-1/4 scroll-ml-10 drop-shadow-lg"
           />
@@ -67,7 +67,7 @@ const BodyPage = () => {
           </p>
         </div>
         <img
-          src="src\assets\img\resource\MUED_V2.png"
+          src="\assets\img\resource\MUED_V2.png"
           alt="MUED V.2"
           className="w-1/4 scroll-ml-10 drop-shadow-lg"
         />
@@ -76,13 +76,13 @@ const BodyPage = () => {
       {/* Section 3 */}
       <div className="bg-white flex justify-center items-center p-10  ">
         <img
-          src="src\assets\img\resource\MUED_V3.png"
+          src="\assets\img\resource\MUED_V3.png"
           alt="MUED V.3"
           className="w-1/4 scroll-ml-10 drop-shadow-lg"
         />
         <div className="ml-8 w-1/3">
           <img
-            src="src\assets\img\resource\MUED_V.3_Font.png"
+            src="\assets\img\resource\MUED_V.3_Font.png"
             alt="MUED V.3"
             className="w-1/4 scroll-ml-10 drop-shadow-lg"
           />
@@ -106,7 +106,7 @@ const BodyPage = () => {
           Get Started Quickly
           <br></br>{" "}
           <a
-            href="http://localhost:5173/introduction"
+            href="/introduction"
             className=""
             style={{
               color: "black",
@@ -119,7 +119,7 @@ const BodyPage = () => {
       {/* Section 5 */}
       <div className="flex justify-center items-center py-8">
         <img
-          src="src\assets\img\resource\body_bg.png"
+          src="\assets\img\resource\body_bg.png"
           alt="Develop Resources"
           className="w-[800px] h-auto  "
         />
@@ -127,7 +127,7 @@ const BodyPage = () => {
       {/* Section 6 */}
       <div className="flex justify-center items-center py-2 ">
         <img
-          src="src\assets\img\resource\End_Body.png"
+          src="\assets\img\resource\End_Body.png"
           alt="Develop Resources"
           className="w-[1080px] h-auto  "
         />

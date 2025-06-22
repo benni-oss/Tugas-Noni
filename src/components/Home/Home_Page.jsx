@@ -7,20 +7,20 @@ const HomePage = () => {
       <div>
         <div>
         <img
-          src="src\assets\img\resource\Printer.png" // ganti dengan path gambar latar belakang kamu
+          src="\assets\img\resource\Printer.png" // ganti dengan path gambar latar belakang kamu
           alt="Background"
           className="absolute mt-3 top-100 left-20 w-1/6   object-cover -z-10" // posisi paling belakang
         /></div>
 
         <div>
         <img
-          src="src\assets\img\resource\muid_bg.png" // ganti dengan path gambar latar belakang kamu
+          src="\assets\img\resource\muid_bg.png" // ganti dengan path gambar latar belakang kamu
           alt="Background"
           className="absolute mt-3 top-0 ml-100 w-250   object-cover -z-10" // posisi paling belakang
         /></div>
         <div className="items-end mt-0  ">
           <img
-            src="src\assets\img\icon\ASET MUED Design System\Decor of Homepage.png"
+            src="\assets\img\icon\ASET MUED Design System\Decor of Homepage.png"
             alt="Logo"
             className="ml-220 h-150 w-240 cursor-pointer drop-shadow-2xl"
           />
@@ -89,7 +89,7 @@ const HomePage = () => {
       <p className="mt-0 text-white text-sm text-center">
         Want To Know Which Product the Design System Used in?{" "}
         <a
-          href="https://www.example.com"
+          href="https://www.mgi-tech.com/"
           style={{
             color: "#0900FF",
             textDecoration: "underline",

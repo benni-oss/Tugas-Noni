@@ -38,7 +38,7 @@ export function Header1() {
       >
         <div className="flex items-center text-white">
           <img
-            src="src/assets/img/icon/ui/logo.png"
+            src="/assets/img/icon/ui/logo.png"
             alt="Logo"
             className="ml-1 mr-1 h-10 cursor-pointer"
           />

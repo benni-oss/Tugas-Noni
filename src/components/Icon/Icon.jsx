@@ -5,7 +5,7 @@ function Icon() {
     <div className="min-h-screen w-full mt-20">
       <div className="flex justify-center  items-center mt-20">
         <img
-          src="src\assets\img\resource\hide_1.png" // ganti dengan path gambar latar belakang kamu
+          src="\assets\img\resource\hide_1.png" // ganti dengan path gambar latar belakang kamu
           alt="Background"
           className="absolute mt-10 mr-10 w-1/2 h-9  object-cover -z-10" // posisi paling belakang
         />
@@ -19,7 +19,7 @@ function Icon() {
           <div className="">Global Style</div>
           <div className="flex justify-center  items-center  ">
             <img
-              src="src\assets\img\resource\hide_2.png" // ganti dengan path gambar latar belakang kamu
+              src="\assets\img\resource\hide_2.png" // ganti dengan path gambar latar belakang kamu
               alt="Background"
               className="absolute mt-10  w-1/2 h-6 mr-10   object-cover -z-10" // posisi paling belakang
             />
@@ -38,7 +38,7 @@ function Icon() {
         </p>
         <div className="flex justify-center  items-center mt-20">
           <img
-            src="src\assets\img\resource\sequencer_decorate.png" // ganti dengan path gambar latar belakang kamu
+            src="\assets\img\resource\sequencer_decorate.png" // ganti dengan path gambar latar belakang kamu
             alt="Background"
             className="absolute mt-50 w-50 ml-50  -z-20" // posisi paling belakang
           />
@@ -75,7 +75,7 @@ function Icon() {
       <div className=" flex justify-center items-center  mt-5  ">
         <div className="ml-5 w-1/2 ">
           <img
-            src="src\assets\img\IconRes\icon_2.png"
+            src="\assets\img\IconRes\icon_2.png"
             alt="MUED V.1"
             className="w-130  scroll-ml-10"
           />
@@ -211,7 +211,7 @@ function Icon() {
       <div className=" flex justify-center items-center  mt-5  ">
         <div className="ml-5 w-1/2 ">
           <img
-            src="src\assets\img\IconRes\canvas_size.png"
+            src="\assets\img\IconRes\canvas_size.png"
             alt="MUED V.1"
             className="w-130  scroll-ml-10"
           />
@@ -239,7 +239,7 @@ function Icon() {
       <div className=" flex justify-center items-center  mt-5  ">
         <div className="ml-5 w-1/2 ">
           <img
-            src="src\assets\img\IconRes\icon_ref_lines.png"
+            src="\assets\img\IconRes\icon_ref_lines.png"
             alt="MUED V.1"
             className="w-130  scroll-ml-10"
           />
@@ -262,7 +262,7 @@ function Icon() {
       <div className=" flex justify-center items-center  mt-5  ">
         <div className="ml-5 w-1/2 ">
           <img
-            src="src\assets\img\IconRes\1.1.png"
+            src="\assets\img\IconRes\1.1.png"
             alt="MUED V.1"
             className="w-130  scroll-ml-10"
           />
@@ -272,7 +272,7 @@ function Icon() {
       <div className=" flex justify-center items-center  mt-5  ">
         <div className="ml-5 w-1/2 ">
           <img
-            src="src\assets\img\IconRes\1.2.png"
+            src="\assets\img\IconRes\1.2.png"
             alt="MUED V.1"
             className="w-130  scroll-ml-10"
           />
@@ -282,7 +282,7 @@ function Icon() {
       <div className=" flex justify-center items-center  mt-5  ">
         <div className="ml-5 w-1/2 ">
           <img
-            src="src\assets\img\IconRes\1.3.png"
+            src="\assets\img\IconRes\1.3.png"
             alt="MUED V.1"
             className="w-130  scroll-ml-10"
           />
@@ -355,7 +355,7 @@ function Icon() {
       <div className=" flex justify-center items-center  mt-5  ">
         <div className="ml-5 w-1/2 ">
           <img
-            src="src\assets\img\IconRes\strokes.png"
+            src="\assets\img\IconRes\strokes.png"
             alt="MUED V.1"
             className="w-150  scroll-ml-10"
           />
@@ -388,7 +388,7 @@ function Icon() {
       <div className=" flex justify-center items-center  mt-5  ">
         <div className="ml-5 w-1/2 ">
           <img
-            src="src\assets\img\IconRes\rounded_corners.png"
+            src="\assets\img\IconRes\rounded_corners.png"
             alt="MUED V.1"
             className="w-150  scroll-ml-10"
           />
@@ -418,7 +418,7 @@ function Icon() {
       <div className=" flex justify-center items-center  mt-5  ">
         <div className="ml-5 w-1/2 ">
           <img
-            src="src\assets\img\IconRes\angles.png"
+            src="\assets\img\IconRes\angles.png"
             alt="MUED V.1"
             className="w-150  scroll-ml-10"
           />
@@ -442,7 +442,7 @@ function Icon() {
             <div className=" flex  mt-5  ">
               <div className="ml-5 w-100 ">
                 <img
-                  src="src\assets\img\IconRes\stroke_caps.png"
+                  src="\assets\img\IconRes\stroke_caps.png"
                   alt="MUED V.1"
                   className="w-150  scroll-ml-10"
                 />
@@ -455,7 +455,7 @@ function Icon() {
             <div className=" flex  mt-5  ">
               <div className="ml-5 w-100 ">
                 <img
-                  src="src\assets\img\IconRes\scaling-icon.png"
+                  src="\assets\img\IconRes\scaling-icon.png"
                   alt="MUED V.1"
                   className="w-150  scroll-ml-10"
                 />
@@ -509,7 +509,7 @@ function Icon() {
       <div className=" flex justify-center items-center  mt-5  ">
         <div className="ml-5 w-1/2 ">
           <img
-            src="src\assets\img\IconRes\download_nor.png"
+            src="\assets\img\IconRes\download_nor.png"
             alt="MUED V.1"
             className="w-150  scroll-ml-10"
           />
@@ -647,7 +647,7 @@ function Icon() {
       <div className=" flex justify-center items-center  mt-5  ">
         <div className="ml-5 w-1/2 ">
           <img
-            src="src\assets\img\IconRes\size_char.png"
+            src="\assets\img\IconRes\size_char.png"
             alt="MUED V.1"
             className="w-125  scroll-ml-10"
           />
@@ -666,7 +666,7 @@ function Icon() {
       <div className=" flex justify-center items-center  mt-5  ">
         <div className="ml-5 w-1/2 ">
           <img
-            src="src\assets\img\IconRes\size_base.png"
+            src="\assets\img\IconRes\size_base.png"
             alt="MUED V.1"
             className="w-125  scroll-ml-10"
           />
@@ -692,7 +692,7 @@ function Icon() {
       {/* Section 6 */}
       <div className="flex justify-center items-center mt-20  ">
         <img
-          src="src\assets\img\resource\End_Body.png"
+          src="\assets\img\resource\End_Body.png"
           alt="Develop Resources"
           className="w-[1000px] h-auto  "
         />

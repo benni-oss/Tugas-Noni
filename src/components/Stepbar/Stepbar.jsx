@@ -299,7 +299,7 @@ export const DescriptionStepBar: React.FC<DescriptionStepBarProps> = ({ steps, s
     <div className="min-h-screen w-full mt-20">
       <div className="flex justify-center  items-center mt-20">
         <img
-          src="src\assets\img\resource\hide_1.png"
+          src="\assets\img\resource\hide_1.png"
           alt="Background"
           className="absolute mt-20 mr-10 w-1/2 h-9  object-cover -z-10"
         />
@@ -314,7 +314,7 @@ export const DescriptionStepBar: React.FC<DescriptionStepBarProps> = ({ steps, s
         </p>
         <div className="flex justify-center  items-center mt-20">
           <img
-            src="src\assets\img\resource\sequencer_decorate.png"
+            src="\assets\img\resource\sequencer_decorate.png"
             alt="Background"
             className="absolute mt-50 w-50 ml-50  -z-20"
           />
@@ -375,7 +375,7 @@ export const DescriptionStepBar: React.FC<DescriptionStepBarProps> = ({ steps, s
       <div className=" flex justify-center items-center  mt-5  ">
         <div className="">
           <img
-            src="src\assets\img\IconRes\Stepbar.png"
+            src="\assets\img\IconRes\Stepbar.png"
             alt="MUED V.1"
             className="w-150 scroll-ml-10"
           />
@@ -404,7 +404,7 @@ export const DescriptionStepBar: React.FC<DescriptionStepBarProps> = ({ steps, s
       <div className=" flex justify-center items-center  mt-10  ">
         <div className=" ">
           <img
-            src="src\assets\img\IconRes\NavStep.png"
+            src="\assets\img\IconRes\NavStep.png"
             alt="MUED V.1"
             className="w-150  scroll-ml-10"
           />
@@ -415,7 +415,7 @@ export const DescriptionStepBar: React.FC<DescriptionStepBarProps> = ({ steps, s
       <div className=" flex justify-center items-center  mt-10  ">
         <div className=" ">
           <img
-            src="src\assets\img\IconRes\nav_stepbar_2.png"
+            src="\assets\img\IconRes\nav_stepbar_2.png"
             alt="MUED V.1"
             className="w-150  scroll-ml-10"
           />
@@ -444,7 +444,7 @@ export const DescriptionStepBar: React.FC<DescriptionStepBarProps> = ({ steps, s
       <div className=" flex justify-center items-center  mt-10  ">
         <div className=" ">
           <img
-            src="src\assets\img\IconRes\dot_step_bar.png"
+            src="\assets\img\IconRes\dot_step_bar.png"
             alt="MUED V.1"
             className="w-150  scroll-ml-10"
           />
@@ -473,7 +473,7 @@ export const DescriptionStepBar: React.FC<DescriptionStepBarProps> = ({ steps, s
       <div className=" flex justify-center items-center  mt-10  ">
         <div className=" ">
           <img
-            src="src\assets\img\IconRes\des_step_bar.png"
+            src="\assets\img\IconRes\des_step_bar.png"
             alt="MUED V.1"
             className="w-150  scroll-ml-10"
           />
@@ -493,7 +493,7 @@ export const DescriptionStepBar: React.FC<DescriptionStepBarProps> = ({ steps, s
       {/* Section 6 */}
       <div className="flex justify-center items-center mt-20  ">
         <img
-          src="src\assets\img\resource\End_Body.png"
+          src="\assets\img\resource\End_Body.png"
           alt="Develop Resources"
           className="w-[1000px] h-auto  "
         />
